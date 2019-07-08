@@ -19,6 +19,21 @@ pair<double, string> convertMass(pair<double, string> usrMass)
 		convMass.first = usrMass.first * 0.035724;
 		convMass.second = "oz";
 	}
+	else if (usrMass.second == "oz")
+	{
+		convMass.first = usrMass.first * 28.3495;
+		convMass.second = "grams";
+	}
+	else if (usrMass.second == "lb")
+	{
+		convMass.first = usrMass.first * 0.453592;
+		convMass.second = "kg";
+	}
+	else if (usrMass.second == "kg")
+	{
+		convMass.first = usrMass.first * 2.20462;
+		convMass.second = "lb";
+	}
 	else
 	{
 		std::cout << "ERROR! not a recognized mass type";
