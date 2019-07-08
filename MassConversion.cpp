@@ -19,6 +19,7 @@ int main()
 		//prompt for user info
 		cout << "\nEnter mass and mass type: ";
 		cin >> usrMass.first >> usrMass.second;
+		
 		cout << "\n-------------------------" << endl;
 		convMass = convertMass(usrMass);
 		cout << "\nUser Mass: " << usrMass.first << " " << usrMass.second << endl;

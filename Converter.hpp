@@ -6,10 +6,10 @@
 using namespace std;
 
 
-/* Method Name: MassConverter
+/* Method Name: convertMass
 	   Purpose: convert mass from imperial to metric and vice cersa
-	   Accepts: double mass, string massType
-	   Returns:	std::pair		*/
+	   Accepts: std::pair<double, string>
+	   Returns:	std::pair<double, string>		*/
 pair<double, string> convertMass(pair<double, string> usrMass)
 {
 	pair<double, string> convMass;
