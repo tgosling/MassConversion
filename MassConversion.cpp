@@ -32,7 +32,6 @@ int main()
 			}
 		} while (cin.fail() || dblInput == 0);
 		getline(cin, strInput);
-		//Clean up mass/type user input
 		strInput = UsrInputHndlr(strInput);
 		//assign to pair
 		usrMass.first = dblInput;
