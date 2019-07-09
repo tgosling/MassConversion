@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
-#include <tuple>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -53,4 +53,17 @@ pair<double, string> convertMass(pair<double, string> usrMass)
 	}
 
 	return convMass;
+}
+
+
+/* Method Name: UsrInputHndlr
+	   Purpose: handles user string input and validates it
+	   Accepts: string str
+	   Returns:	string 		*/
+string UsrInputHndlr(string strInput)
+{
+	strInput.erase(remove_if(strInput.begin(), strInput.end(), ::isspace), strInput.end());
+	transform(strInput.begin(), strInput.end(), strInput.begin(), ::tolower);
+
+	return strInput;
 }
